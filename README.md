@@ -45,7 +45,7 @@ No installation required! Simply:
 
 ## Quote Collection
 
-The app includes 25+ carefully curated motivational quotes from famous authors and thinkers, organized across all mood categories.
+The app includes 25 carefully curated motivational quotes from famous authors and thinkers, organized across all mood categories.
 
 ## Future Enhancements
 
