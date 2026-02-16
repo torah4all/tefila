@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Quotes - Mood Based</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Motivational Quotes ✨</h1>
+            <p class="subtitle">Get inspired based on your mood</p>
+        </header>
+
+        <div class="mood-selector">
+            <label for="mood">Select your mood:</label>
+            <select id="mood">
+                <option value="all">All Moods</option>
+                <option value="happy">😊 Happy</option>
+                <option value="motivated">💪 Motivated</option>
+                <option value="sad">😔 Sad</option>
+                <option value="anxious">😰 Anxious</option>
+                <option value="tired">😴 Tired</option>
+            </select>
+        </div>
+
+        <div class="quote-container">
+            <div class="quote-text" id="quoteText">Click the button to get a motivational quote!</div>
+            <div class="quote-author" id="quoteAuthor"></div>
+            <div class="quote-mood" id="quoteMood"></div>
+        </div>
+
+        <div class="edit-container" id="editContainer" style="display: none;">
+            <h3>Edit Quote</h3>
+            <textarea id="editText" rows="4"></textarea>
+            <input type="text" id="editAuthor" placeholder="Author">
+            <div class="button-group">
+                <button class="btn btn-save" onclick="saveEdit()">💾 Save Edit</button>
+                <button class="btn btn-cancel" onclick="cancelEdit()">❌ Cancel</button>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn btn-primary" onclick="getRandomQuote()">🎲 Get Random Quote</button>
+            <button class="btn btn-secondary" onclick="editQuote()" id="editBtn" disabled>✏️ Edit Quote</button>
+        </div>
+
+        <div class="stats">
+            <p id="quoteCount">Available quotes: 0</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
